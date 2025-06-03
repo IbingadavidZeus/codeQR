@@ -25,7 +25,7 @@ def generate_qr_code():
     qr.make(fit=True)
 
     img = qr.make_image(fill_color="black", back_color="white")
-    img = img.resize((200, 200), Image.ANTIALIAS)
+    img = img.resize((200, 200))
     qr_image = img  # on garde l'image originale pour la sauvegarde
 
     img_tk = ImageTk.PhotoImage(img)
